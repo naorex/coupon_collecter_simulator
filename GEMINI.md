@@ -6,3 +6,7 @@
 # 技術スタック
 
 - Python
+  - version 3.13
+- Docker
+  - Python は Docker コンテナを作成した上で実行してください。
+  - Docker コンテナは実行後は即時削除するようにしてください。
