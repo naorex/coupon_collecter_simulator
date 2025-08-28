@@ -35,9 +35,11 @@ def calculate_expected_purchases(num_coupons):
     return expected_purchases
 
 
+import os
+
 if __name__ == "__main__":
-    num_coupons = 5
-    num_simulations = 1000
+    num_coupons = int(os.environ.get("NUM_COUPONS", 5))
+    num_simulations = int(os.environ.get("NUM_SIMULATIONS", 1000))
 
     total_purchases = 0
     for _ in range(num_simulations):
